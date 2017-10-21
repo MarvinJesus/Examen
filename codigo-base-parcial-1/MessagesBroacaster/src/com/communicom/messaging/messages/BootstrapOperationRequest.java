@@ -8,6 +8,8 @@ public class BootstrapOperationRequest extends Mensaje{
 
 	public BootstrapOperationRequest(int messageNumber, String sourceAddress, String targetAddress, LocalDateTime emisionTime) {
 		super(messageNumber, sourceAddress, targetAddress, emisionTime);
+		this.mensajeName ="Chat mensaje";
+		this.version ="V 1.1";;
 	}
 
 	public String getMensajeName() {

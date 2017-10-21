@@ -46,11 +46,12 @@ public class MessagingSimulator {
 	
 
 	private static void processOption(int option) throws Exception  {
-		int messageOption = askForOptions();
+		
 		if (option == 1){
+			int messageOption = askForOptions();
 			messageController.sendMessage(messageOption);	
 		}else if (option == 2){
-			messageController.listMessage(messageOption);	
+			messageController.listMessage();	
 		}
 		
 	}
@@ -61,7 +62,7 @@ public class MessagingSimulator {
 		System.out.println("3. Set Wait For Signal Request");
 		System.out.println("4. Set Wait For Signal Response");
 		System.out.println("5. Bootstrap Operation Request");
-		System.out.println("5. Bootstrap Operation Response");
+		System.out.println("6. Bootstrap Operation Response");
 		return Integer.parseInt(br.readLine());
 	}	
 	

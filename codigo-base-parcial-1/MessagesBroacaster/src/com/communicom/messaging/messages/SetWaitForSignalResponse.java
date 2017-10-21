@@ -41,7 +41,7 @@ public class SetWaitForSignalResponse extends Mensaje{
 
 	@Override
 	public String toString() {
-		return "SetWaitForSignalResponse [signal=" + signal + ", signalExpectedValue=" + signalExpectedValue
-				+ ", signalReceivedValue=" + signalReceivedValue + super.toString();
+		return "SetWaitForSignalResponse\nsignal=" + signal + "\nsignalExpectedValue=" + signalExpectedValue
+				+ "\nsignalReceivedValue=" + signalReceivedValue + super.toString();
 	}
 }

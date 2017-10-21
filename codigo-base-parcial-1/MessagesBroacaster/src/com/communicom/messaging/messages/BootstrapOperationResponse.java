@@ -10,6 +10,10 @@ public class BootstrapOperationResponse extends Mensaje{
 
 	public BootstrapOperationResponse(int messageNumber, String sourceAddress, String targetAddress, LocalDateTime emisionTime) {
 		super(messageNumber, sourceAddress, targetAddress, emisionTime);
+		this.mensajeName ="Mi mensaje";
+		this.version ="V 0.2";
+		this.result= 1;
+		this.errorMessage =0;
 	}
 
 	public String getMensajeName() {
@@ -45,7 +49,7 @@ public class BootstrapOperationResponse extends Mensaje{
 	}
 	@Override
 	public String toString() {
-		return "BootstrapOperationReponse \nmensajeName=" + mensajeName + "\nversion=" + version + "\n result=" + result
+		return "BootstrapOperationReponse \nmensajeName=" + mensajeName + "\nversion=" + version + "\nresult=" + result
 				+ "\nerrorMessage=" + errorMessage + super.toString();
 	}
 

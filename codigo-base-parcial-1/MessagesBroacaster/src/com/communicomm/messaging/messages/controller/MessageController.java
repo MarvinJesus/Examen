@@ -19,15 +19,15 @@ public class MessageController {
 		
 	}
 
-	public void listMessage(int messageOption) {
-		if (messageOption == 1){
-			for (Mensaje currentRequest: listaMensajes){
-				System.out.println("**********************************************");
-				System.out.println(currentRequest.toString());
-				System.out.println("**********************************************");
-				
-			}
+	public void listMessage() {
+		
+		for (Mensaje currentRequest: listaMensajes){
+			System.out.println("**********************************************");
+			System.out.println(currentRequest.toString());
+			System.out.println("\n**********************************************");
+			
 		}
+		
 	}
 
 }
